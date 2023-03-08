@@ -2,8 +2,13 @@ import { createClient } from '@supabase/supabase-js'
 
 import {
   Auth,
-  ThemeSupa,
 } from '@supabase/auth-ui-react'
+
+import {
+  // Import predefined theme
+  ThemeSupa,
+} from '@supabase/auth-ui-shared'
+
 
 const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
